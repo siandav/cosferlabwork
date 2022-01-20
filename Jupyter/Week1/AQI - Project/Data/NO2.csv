@@ -1,0 +1,79 @@
+Air quality monitoring: NO2,,,,,
+Unit: µg(NO2)/m³,,,,,
+Year,Station,St.type,Average,98-percentile,19th highest
+2019,Copenhagen/1103,Street,33,76,102
+2019,Copenhagen/1257,Street,24,66,88
+2019,Copenhagen/1259,Urban backgr.,12,38,55
+2018,Copenhagen/1103,Street,39,93,117
+2018,Copenhagen/1257,Street,30,85,110
+2018,Copenhagen/1259,Urban backgr.,13,43,64
+2017,Copenhagen/1103,Street,38,89,121
+2017,Copenhagen/1257,Street,28,79,108
+2017,Copenhagen/1259,Urban backgr.,16,56,84
+2016,Copenhagen/1103,Street,47,107,129
+2016,Copenhagen/1257,Street,33,87,108
+2016,Copenhagen/1259,Urban backgr.,15,47,66
+2015,Copenhagen/1103,Street,49,108,135
+2015,Copenhagen/1257,Street,33,83,108
+2015,Copenhagen/1259,Urban backgr.,16,48,68
+2014,Copenhagen/1103,Street,51,110,142
+2014,Copenhagen/1257,Street,37,90,114
+2014,Copenhagen/1259,Urban backgr.,16,49,72
+2013,Copenhagen/1103,Street,55,123,152
+2013,Copenhagen/1257,Street,38,93,122
+2013,Copenhagen/1259,Urban backgr.,16,52,68
+2012,Copenhagen/1103,Street,55,126,150
+2012,Copenhagen/1257,Street,38,96,121
+2012,Copenhagen/1259,Urban backgr.,17,50,69
+2011,Copenhagen/1103,Street,54,126,160
+2011,Copenhagen/1257,Street,40,100,132
+2011,Copenhagen/1259,Urban backgr.,18,52,74
+2010,Copenhagen/1103,Street,56,129,180
+2010,Copenhagen/1257,Street,39,97,129
+2010,Copenhagen/1259,Urban backgr.,17,53,70
+2009,Copenhagen/1103,Street,50,110,143
+2009,Copenhagen/1257,Street,43,111,161
+2009,Copenhagen/1259,Urban backgr.,18,53,70
+2008,Copenhagen/1103,Street,55,126,169
+2008,Copenhagen/1257,Street,45,114,149
+2008,Copenhagen/1259,Urban backgr.,20,53,79
+2007,Copenhagen/1103,Street,52,116,158
+2007,Copenhagen/1257,Street,41,104,139
+2007,Copenhagen/1259,Urban backgr.,19,55,74
+2006,Copenhagen/1103,Street,53,104,131
+2006,Copenhagen/1257,Street,53,124,159
+2006,Copenhagen/1259,Urban backgr.,25,65,90
+2005,Copenhagen/1103,Street,54,111,147
+2005,Copenhagen/1257,Street,47,103,133
+2005,Copenhagen/1259,Urban backgr.,23,59,82
+2004,Copenhagen/1103,Street,52,107,142
+2004,Copenhagen/1257,Street,46,104,130
+2004,Copenhagen/1259,Urban backgr.,22,60,81
+2003,Copenhagen/1103,Street,59,127,162
+2003,Copenhagen/1257,Street,47,104,133
+2003,Copenhagen/1259,Urban backgr.,23,65,99
+2002,Copenhagen/1103,Street,61,119,142
+2002,Copenhagen/1257,Street,47,101,122
+2002,Copenhagen/1259,Urban backgr.,20,58,75
+2001,Copenhagen/1103,Street,53,99,118
+2001,Copenhagen/1257,Street,40,87,106
+2001,Copenhagen/1259,Urban backgr.,22,56,73
+2000,Copenhagen/1257,Street,42,92,117
+2000,Copenhagen/1259,Urban backgr.,21,53,73
+1999,Copenhagen/1257,Street,47,97,117
+1999,Copenhagen/1259,Urban backgr.,25,65,88
+1998,Copenhagen/1257,Street,43,90,114
+1998,Copenhagen/1259,Urban backgr.,24,60,75
+1997,Copenhagen/1257,Street,43,84,108
+1997,Copenhagen/1259,Urban backgr.,28,72,93
+1996,Copenhagen/1257,Street,45,104,140
+1996,Copenhagen/1259,Urban backgr.,30,77,107
+1995,Copenhagen/1257,Street,53,111,180
+1995,Copenhagen/1259,Urban backgr.,29,69,87
+1994,Copenhagen/1257,Street,46,103,124
+1993,Copenhagen/1257,Street,44,102,122
+1992,Copenhagen/1257,Street,52,113,150
+1991,Copenhagen/1257,Street,52,111,132
+1990,Copenhagen/1257,Street,54,132,163
+1989,Copenhagen/1257,Street,62,149,189
+1988,Copenhagen/1257,Street,62,158,198

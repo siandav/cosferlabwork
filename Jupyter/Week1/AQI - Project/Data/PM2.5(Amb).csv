@@ -1,0 +1,29 @@
+Air quality monitoring: PM2.5(Amb),,,,
+Unit: µg/m³,,,,
+Year,Station,St.type,Average,90-percentile
+2017,Copenhagen/1259,Urban backgr.,10,18
+2016,Copenhagen/1103,Street,15,25
+2016,Copenhagen/1259,Urban backgr.,12,22
+2015,Copenhagen/1103,Street,16,21
+2015,Copenhagen/1257,Street,14,26
+2015,Copenhagen/1259,Urban backgr.,12,22
+2014,Copenhagen/1103,Street,18,30
+2014,Copenhagen/1257,Street,17,31
+2014,Copenhagen/1259,Urban backgr.,13,23
+2013,Copenhagen/1103,Street,17,28
+2013,Copenhagen/1257,Street,14,24
+2013,Copenhagen/1259,Urban backgr.,11,19
+2012,Copenhagen/1103,Street,14,26
+2012,Copenhagen/1257,Street,15,26
+2012,Copenhagen/1259,Urban backgr.,11,21
+2011,Copenhagen/1103,Street,19,33
+2011,Copenhagen/1257,Street,21,34
+2011,Copenhagen/1259,Urban backgr.,17,30
+2010,Copenhagen/1103,Street,17,29
+2010,Copenhagen/1257,Street,18,29
+2010,Copenhagen/1259,Urban backgr.,13,25
+2009,Copenhagen/1103,Street,-,-
+2009,Copenhagen/1259,Urban backgr.,-,-
+2008,Copenhagen/1103,Street,22,33
+2008,Copenhagen/1259,Urban backgr.,13,-
+2007,Copenhagen/1103,Street,23,36
