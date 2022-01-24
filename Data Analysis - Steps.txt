@@ -1,0 +1,58 @@
+1. Import your CSV - concat it if you need.
+
+2. Check information about your CSV - data.info, shape, head, tail...
+
+3. Cleaning/Wrangling/EDA:
+	- Drope dupes -- drop the whole row with empty values
+	- deal with nulls -- drop, fill with unknow or mean
+	- standardize headers, values (example of the States and Genders, had different values for the same state, example: CA, Cali)
+	- drop whole columns - justify it - columns with a lot of empty values
+	- drop outlies (when you find the outliers, come back to the cleaning stage). IMPORTANT!!!!!
+
+4. EDA - exploratory data analysis:
+	- apply plots, hist, scatterplot comparing correlations, boxplot
+	- correlation matrix - multicollinearity, relations to target the variable
+	- check if has outliers, if yes go back to the cleaning stage.
+
+5. Drop Columns
+	- After the EDA analysis we are going to find more columns that we can drop, because are not giving good correlations;
+	- num -> cat = when number is not working as a continuous variable = DATA WRANGLE
+	- standardising values
+
+After all these steps we have a reduced data frame and semi standardised.
+
+6. Define y = when you do that, you must drop y from X.
+
+7. Split X in to Numbers and Categories
+
+8. Pre Processing - Candidate 1 
+	YOU HAVE TO DO IT:
+	- eg.encode - categories for apply the linear regression (OneHotEncoder, Ordinal Encoder, get_dummies()"will bring and dataframe")]
+		- if you use OHE and OE you the answer will be an ARRAY, so you need to conver to a DataFrame to do the concat later;
+	- scaling - only for numeric - MinMax, Robust(best option to use when has outliers)
+	- transformations - maths - log_trans()
+### Visualise before and after every scaling attempt!!!!!!!!
+
+9. Merge number + cat back together
+	- may be need to change back to DF from array (list)
+	- np.concatenate(array1,array2) = merge to array
+	- pd.concat (df1,df2)
+	- we need to check if this new dataframe has the rows as "y"
+		- do that checking the shapes of the news dataframe and "y"
+
+10. Model
+	- imput the model + metrics
+	- train test split (remember to set random = n)## setting a random is good while you are checking if the model is good or not.
+	- Fit() model to train
+	- Test model against test data
+		- predicts / actual "y"
+
+11. Evaluate the model with ERRORS
+	- r2, mae, mse, rmse
+	- what does it mean??? 
+	- task list: brainstorm to see what you can do to improve the model
+
+12. Candidate model 2
+	- you can do the changes in the data
+	- or you can just do the changes in X_num, X_cat
+	- repeat proccess between 8 and 11, you will need to define what steps you will do it or just skip it. It will depend of the new strategy that you choose. 
