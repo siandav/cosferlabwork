@@ -1,6 +1,4 @@
-Air quality monitoring: NO,,,,,
-Unit: µg/m³,,,,,
-Year,Station,St.type,Average,98-percentile,19th highest
+Year,Station,St.type,Average µg/m³,98-percentile,19th highest
 2019,Copenhagen/1103,Street,23,86,159
 2019,Copenhagen/1257,Street,14,64,109
 2019,Copenhagen/1259,Urban backgr.,1,8,20

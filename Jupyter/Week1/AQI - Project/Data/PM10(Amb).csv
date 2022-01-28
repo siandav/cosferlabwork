@@ -1,6 +1,4 @@
-Air quality monitoring: PM10(Amb),,,,,
-Unit: µg/m³,,,,,
-Year,Station,St.type,Average,90-percentile,Number of days >50µg/m3
+Year,Station,St.type,Average µg/m³ ,90-percentile,Number of days >50µg/m3
 2017,Copenhagen/1103,Street,31,48,18
 2017,Copenhagen/1259,Urban backgr.,18,30,6
 2016,Copenhagen/1103,Street,30,45,15

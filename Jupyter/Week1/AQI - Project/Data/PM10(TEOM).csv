@@ -1,6 +1,4 @@
-Air quality monitoring: PM10(TEOM),,,,
-Unit: µg/m³,,,,
-Year,Station,St.type,Average,36th highest day
+Year,Station,St.type,Average µg/m³ ,36th highest day
 2019,Copenhagen/1103,Street,26,45
 2018,Copenhagen/1103,Street,31,53
 2017,Copenhagen/1103,Street,26,46

@@ -1,6 +1,4 @@
-Air quality monitoring: CO,,,,
-Unit: µg/m³,,,,
-Year,Station,St.type,Average,Max. 8-hour
+Year,Station,St.type,Average µg/m³,Max. 8-hour
 2019,Copenhagen/1103,Street,276,823
 2019,Copenhagen/1259,Urban backgr.,185,421
 2018,Copenhagen/1103,Street,326,1683
