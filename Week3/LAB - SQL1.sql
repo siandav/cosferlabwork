@@ -71,4 +71,4 @@ SELECT *, extract(MONTH FROM rental_date) AS month, CASE WEEKDAY(rental_date)
  FROM rental;
  
 # 9. How many rentals were in the last month of activity?
-SELECT COUNT(rental_id) FROM rental WHERE rental_date>'2006-02-01 00:00:00';
+SELECT COUNT(rental_id) FROM rental WHERE rental_date>'2006-01-14 15:16:03';
