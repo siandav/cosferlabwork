@@ -1,0 +1,6 @@
+calculation field tableau
+
+1. fixeed max(order date);
+2. fixed custom id: max (order date);
+3. plot the histogram ( select days since last purchased and then press on show me HISTOGRAM);
+4. learn how to properly use FIXED in tableau;

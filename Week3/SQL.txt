@@ -1,0 +1,15 @@
+It's not key sensitive, but it's better to keep using function with uppercase;
+
+ACID:
+- atomicity:
+- consistency:
+- isolation:
+- durability:
+
+*OBS: Limit to 300 rows (a bit more): it's going to turn the query more efficient
+
+---------- SQL CASE STUDY ------------
+Guide to the Financial data Set
+
+- Good clients: sallary in, pay fees
+- Bad clients: different adresses for different accounts, balance = 0, 
