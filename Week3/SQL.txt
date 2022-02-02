@@ -19,3 +19,6 @@ Guide to the Financial data Set
 DQL - data query language: SELECT - only read the data base
 DDL - data definition language: create - change the data base
 DML - data manipulation language: insert update - change the data basee
+----------
+WINDOW function:
+study - try to understand what is the logic behing the query;
