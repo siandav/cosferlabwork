@@ -33,7 +33,7 @@ SELECT COUNT(distinct i.inventory_id) AS qty_movies, COUNT(distinct r.rental_id)
 SELECT MAX(length) AS max_duration, MIN(length) AS min_duration FROM film;
 
 # 4. What's the average movie duration expressed in format (hours, minutes)?
-SELECT FLOOR(AVG(length)/60) AS hours, AVG(length)%60 AS minutes FROM film;
+SELECT FLOOR(AVG(length)/60) AS hours, round(AVG(length)%60) AS minutes FROM film;
 
 # 5. How many distinct (different) actors' last names are there?
 SELECT COUNT(distinct last_name) FROM actor;
@@ -54,6 +54,8 @@ SELECT *, extract(MONTH FROM rental_date) AS month, CASE WEEKDAY(rental_date)
     END
 AS weekday FROM rental;
 
+SELECT *, date_format(rental_date, '%M') as month, date_format(rental_date, '%W') as weekday from rental;
+
 # 8. Add an additional column day_type with values 'weekend' and 'workday' depending on the rental day of the week.	
 SELECT *, extract(MONTH FROM rental_date) AS month, CASE WEEKDAY(rental_date) 
     WHEN 6 THEN 'SUNDAY' 
@@ -72,3 +74,5 @@ SELECT *, extract(MONTH FROM rental_date) AS month, CASE WEEKDAY(rental_date)
  
 # 9. How many rentals were in the last month of activity?
 SELECT COUNT(rental_id) FROM rental WHERE rental_date>'2006-01-14 15:16:03';
+
+select date(MAX(rental_date)) - INTERVAL 30 DAY, date(max(rental_date)) FROM rental;
