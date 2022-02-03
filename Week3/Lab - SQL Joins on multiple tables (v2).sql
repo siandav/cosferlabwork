@@ -11,7 +11,7 @@ JOIN country co
 USING(country_id);
 
 # 2. Write a query to display how much benefit amount, in dollars, each store brought in.
-SELECT s.store_id, sum(p.amount) FROM store s
+SELECT s.store_id, sum(p.amount) as benefit_amount FROM store s
 JOIN staff sta
 USING(store_id)
 JOIN payment p
