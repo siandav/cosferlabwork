@@ -22,3 +22,5 @@ DML - data manipulation language: insert update - change the data basee
 ----------
 WINDOW function:
 study - try to understand what is the logic behing the query;
+
+DATA ARCHITECTURE:
