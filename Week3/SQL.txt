@@ -24,3 +24,6 @@ WINDOW function:
 study - try to understand what is the logic behing the query;
 
 DATA ARCHITECTURE:
+------------------
+JOIN, INNER JOIN, OUTER JOIN
+* in SQL, it priotize
