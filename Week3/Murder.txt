@@ -1,0 +1,17 @@
+
+
+
+SELECT person_id, transcript FROM interview
+WHERE person_id = (SELECT id FROM person WHERE address_street_name LIKE 'Franklin Ave' and name LIKE 'Annabel%'
+ORDER BY address_number DESC LIMIT 1);
+
+SELECT id, c.check_in_date, membership_status FROM get_fit_now_member as m
+JOIN get_fit_now_check_in as c ON (m.id = c.membership_id)
+WHERE check_in_date = 20180109 and membership_id LIKE '%48Z%' and membership_status LIKE 'gold';
+
+SELECT * FROM drivers_license
+WHERE plate_number LIKE '%H42W%' and gender LIKE 'male'
+             
+
+SELECT * FROM get_fit_now_member as gf
+JOIN person as p ON (gf.person_id = p.id)

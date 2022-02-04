@@ -16,8 +16,7 @@ SELECT ceil(avg(number_of_transaction)) as Average FROM
 GROUP BY account_id) as sub;
  
  # 1) First i need to find out how many trans per account - group by - account
- # 2) Find the average of those
- 
+ # 2) Find the average of those 
  SELECT ceil(avg(Transaction)) as Average FROM
  (SELECT account_id, count(*) as Transaction from bank.trans
  GROUP BY account_id) as s;

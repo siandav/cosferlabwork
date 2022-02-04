@@ -6,8 +6,8 @@ SELECT count(c.client_id) as noofclients, d.a2 as districtname, d.a4 as populati
 round(COUNT(c.client_id)/d.a4,4)*100 as proportion
 FROM 
 	district d
-		JOIN # inner by default
-			client c ON d.a1 = c.district_id # saying witch are the values in common between the two tables
+		JOIN client c# inner by default
+			 ON d.a1 = c.district_id # saying witch are the values in common between the two tables
 GROUP BY a2,a4
 ORDER BY proportion DESC;
 

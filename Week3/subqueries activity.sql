@@ -13,3 +13,5 @@ GROUP BY a.account_id
 ORDER BY a.account_id ASC;
 
 # 3. Discuss which method will be more efficient.
+
+-------------------------------------------------------
