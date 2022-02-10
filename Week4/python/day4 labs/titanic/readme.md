@@ -1,20 +1,15 @@
-# Ironhack Project - Job Position Analysis
+# TITANIC - TOP SCORES CHEAT OR NOT???
 **Summary:**
-We analysed roughly 7,000 jobs offers related to data scraped from the web. The aim of this study is to offer insight to Data Analytics students in regards
-with landing a job in the data industry. For this, we accounted for the most
-demanded tools, skills and backgrounds that we might (hopefully) master in
-the bootcamp
+I analyzed 5 notebook used in a titanic competion promoted by kaggle. I selected them filtering the highest scores in the competition. The highest score is 1 and 20 user achieved this score. After checking 3 of those and see that they user cheat, I selected one that had more than 8500 votes with a gold medal and other one with around 125 votes and a bronze medal.
 <br/><br/>
-by [Thiago Costa](https://github.com/cosfer2804/cosferlabwork) & [Marc Soler](https://github.com/cosfer2804/cosferlabwork) & [Marc Puyol Iniesta](https://github.com/cosfer2804/cosferlabwork), January 2022
-<br/><br/>
-<img src="https://prod-discovery.edx-cdn.org/media/programs/card_images/5038aae3-cc09-4995-a33a-8ca6bd03952e-9caf53c6bed2.jpg">
+by [Thiago Costa](https://github.com/cosfer2804/cosferlabwork)
 
 ## Table of content
 
 - [Data](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#data)
-- [Data Processing](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#Data-Processing)
-- [Analysis](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#analysis)
-- [Conclusion](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#Conclusion)
+- [3 Cheaters](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#3-cheaters)
+- [Gold Medal](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#gold-medal)
+- [Bronze Medal ](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#bronze-medal)
 
 ## Data
 We picked data scraped from the Indeed website containing information of 7,000 data scientist jobs around the U.S. on August 3rd 2018. The information that we worked on is structured in: Company, Name, Position Name, Location, Job, Description, and Number of Reviews of the Company. 
