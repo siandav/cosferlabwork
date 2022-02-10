@@ -25,9 +25,13 @@ EDA insights:
 [Cheater2](https://www.kaggle.com/maryragozina/notebook9849f51564),
 [Cheater3](https://www.kaggle.com/andrej0marinchenko/titanic-machine-learning-from-disaster/notebook)<br/>
 - The cheaters 1 and 2 are cheaters and lazy, because they just did a small and very confused for loop (the one below in the image) that play around the test table faking is doing something usefull. But in the end, they just extract the results from the internet and submit this csv as the predicted ones;
-- The cheater 3 actually do the same as the others in the end, but at least did some good EDA. In the beginning look like that is working with the data to get some insights, he worked with the nulls in some columns and even did some plots using matplotlib pyplot, scatter_3d, scatter, FacetGrid. Actually was really nice to see different plots applyed in the EDA, it was possible to get insights from this notebook even the author cheating. In the end of the notebook the author used an decision tree, however in the end, where he was suppose to submit the predict values gotten from decision tree, he did the same as the other 2 cheaters above.
+- The cheater 3 actually do the same as the others in the end, but at least did some good EDA. In the beginning look like that is working with the data to get some insights, he worked with the nulls in some columns and even did some plots using matplotlib pyplot, scatter_3d, scatter, FacetGrid. Actually was really nice to see different plots applyed in the EDA, it was possible to get insights from this notebook even the author cheating. In the end of the notebook the author used an decision tree, however in the end, where he was suppose to submit the predict values gotten from decision tree, he did the same as the other 2 cheaters above.<br/>
 
-<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Jupyter/Week2/Project/chart2.png">
+"For" that the cheaters used to play around the test dataframe:
+<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/day4%20labs/titanic/for.png">
+<br/>
+In the end the 3 cheaters submited the answers from the competition instead of the predicted results:
+<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/day4%20labs/titanic/submit.png">
 
 ## Bronze Medal
 **Tools:** Excel is still very popular, specially for the data analyst position, possibly because it is not as technical as the others. As for Tableau, it is most demanded for Data Analysts (the percentage would probably be higher if we take into consideration some similar expressions such as visualization tools, Power BI, etc.). Also, from the graph we can infer that our position assignation was quite effective, since the percentages for the 'other' category are significantly lower except for Excel, the least specialized tool.
