@@ -10,7 +10,8 @@ by [Thiago Costa](https://github.com/cosfer2804/cosferlabwork)
 - [3 Cheaters](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#3-cheaters)
 - [Bronze Medal](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#bronze-medal)
 - [Gold Medal ](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#gold-medal)
-9
+
+
 ## Data
 [TITANIC LINK](https://www.kaggle.com/c/titanic/overview)<br/>
 First I studied the dataset given. Using jupyter notebook and tableau it was possible to apply some EDA get some knowledge about the dataframe.<br/>
@@ -20,7 +21,13 @@ EDA insights:
 - After applying some EDA, I could see that 'age' is definitely correlated to survival probability, in this case the null values should be replaced by the age.mean(). 'embarked' may also be correlated with survival, so in this case need to replace de null as well.
 - With the EDA was possible to see that creating some features may improve the results. Example: create a group for 'age' bands, leaving the 'age' alone gives you a lot of information that's hard to see and extract some information from it.<br/><br/>
 ## 3 Cheaters
-First, we did some basic cleaning and deleted the location columns since they didn't contribute to our analysis. Then, we standardized the different position names in 4 categories: Data Analyst, Data Scientist, Data Engineer and other. After that, we cleaned the description column so that we only considered the more relevant words for each of the positions. We did that by tokenizing the words and removing stop words. Finally, we iterated through all the rows in search of keywords from 4 different domains: tools, skills, education level and majors. Keywords can be found in the plots below. We accounted for just one appearance of the word per job description, so no keyword was overrepresented.
+[Cheater1](https://www.kaggle.com/evgenypotapov/notebook602c8b4de2),
+[Cheater2](https://www.kaggle.com/maryragozina/notebook9849f51564),
+[Cheater3](https://www.kaggle.com/andrej0marinchenko/titanic-machine-learning-from-disaster/notebook)<br/>
+- The cheaters 1 and 2 are cheaters and lazy, because they just did a small and very confused for loop (the one below in the image) that play around the test table faking is doing something usefull. But in the end, they just extract the results from the internet and submit this csv as the predicted ones;
+- The cheater 3 actually do the same as the others in the end, but at least did some good EDA. In the beginning look like that is working with the data to get some insights, he worked with the nulls in some columns and even did some plots using matplotlib pyplot, scatter_3d, scatter, FacetGrid. Actually was really nice to see different plots applyed in the EDA, it was possible to get insights from this notebook even the author cheating. In the end of the notebook the author used an decision tree, however in the end, where he was suppose to submit the predict values gotten from decision tree, he did the same as the other 2 cheaters above.
+
+<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Jupyter/Week2/Project/chart2.png">
 
 ## Bronze Medal
 **Tools:** Excel is still very popular, specially for the data analyst position, possibly because it is not as technical as the others. As for Tableau, it is most demanded for Data Analysts (the percentage would probably be higher if we take into consideration some similar expressions such as visualization tools, Power BI, etc.). Also, from the graph we can infer that our position assignation was quite effective, since the percentages for the 'other' category are significantly lower except for Excel, the least specialized tool.
