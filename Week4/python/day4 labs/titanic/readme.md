@@ -25,7 +25,7 @@ EDA insights:
 [Cheater2](https://www.kaggle.com/maryragozina/notebook9849f51564),
 [Cheater3](https://www.kaggle.com/andrej0marinchenko/titanic-machine-learning-from-disaster/notebook)<br/>
 - The cheaters 1 and 2 are cheaters and lazy, because they just did a small and very confused for loop (the one below in the image) that play around the test table faking is doing something usefull. But in the end, they just extract the results from the internet and submit this csv as the predicted ones;
-- The cheater 3 actually do the same as the others in the end, but at least did some good EDA. In the beginning look like that is working with the data to get some insights, he worked with the nulls in some columns and even did some plots using matplotlib pyplot, scatter_3d, scatter, FacetGrid. Actually was really nice to see different plots applyed in the EDA, it was possible to get insights from this notebook even the author cheating. In the end of the notebook the author used an decision tree, however in the end, where he was suppose to submit the predict values gotten from decision tree, he did the same as the other 2 cheaters above.<br/>
+- The cheater 3 actually do the same as the others in the end, but at least did some good EDA. In the beginning look like that is working with the data to get some insights, he worked with the nulls in some columns and even did some plots using matplotlib pyplot, scatter_3d, scatter, FacetGrid. Actually was really nice to see different plots applied in the EDA, it was possible to get insights from this notebook even the author cheating. In the end of the notebook the author used an decision tree, however in the end, where he was suppose to submit the predict values gotten from decision tree, he did the same as the other 2 cheaters above.<br/>
 
 "For" that the cheaters used to play around the test dataframe:
 <img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/day4%20labs/titanic/for.png">
@@ -34,20 +34,19 @@ In the end the 3 cheaters submited the answers from the competition instead of t
 <img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/day4%20labs/titanic/submit.png">
 
 ## Bronze Medal
-**Tools:** Excel is still very popular, specially for the data analyst position, possibly because it is not as technical as the others. As for Tableau, it is most demanded for Data Analysts (the percentage would probably be higher if we take into consideration some similar expressions such as visualization tools, Power BI, etc.). Also, from the graph we can infer that our position assignation was quite effective, since the percentages for the 'other' category are significantly lower except for Excel, the least specialized tool.
+In this notebook, the author did data visualisation, data preprocessing, fill missing values and encoding:
+- He started dealing with empty values, filled the 'age' null values with the median;
+- Then he did 'features' applied with visualisation, also converted categorical data into numerical using dummies;
+- The author started looking for the numerical categories. Also found an relation with the 'fare' price and probability of surviving
+- Merged some columns with others to get some 'features' as the passenger is alone or not.
+- This notebook did a lot of analysis with plots and explanations. The author said in his notebook that the last notebook consist in the result of a lot of tries and using different methods;
+- The author did feature scaling with standardisation (StandarScaler).
+- For the machine learning model the author created a list with different kind of methods and applied them all. Then he did a for to check for the best accuracy in the models used. The RandomForestClassifier gave the highest accuracy.
+- In the end he decided to apply hyperparamter tuning with RandomForestClassifier and that was how he got in the top 4%.
 
-**Skills:** Machine learning is very demanded for data scientist and data engineers, but not so much for analyst, the same as for AI.
+Here is the accuracy table comparing differend models:
+<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/day4%20labs/titanic/models%20table.png">
 
-<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Jupyter/Week2/Project/chart1.png">
+## Gold Medal
 
-**Gold Medal** Most Data Analyst jobs require either a Bachelor's or Master's. For Data Scientist, on the other hand, we find higher education requirements: less percentage of job positions ask for Bachelor's, but a significant amount of them ask for a PhD, so we presume recruiters don't even list a Bachelor's in the job offer.
-
-**Majors:** According to our results, business is the most common or demanded background. This can be biased by the popularity of the word itself. Very specialized majors (in the sense that they differ significantly from the data path), such as geography or psychology, have marginal niche demand.
-
-<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Jupyter/Week2/Project/chart2.png">
-
-## Conclusion
-- Job positions overlap frequently, and roles in the data industry are not well-defined. Therefore, don't let job positions names differing from data analyst stop you from applying.
-- You're okay with a bachelor's degree to access most of the jobs in terms of education level requirements.
-- The most demanded tools in the industry for the data analyst role are excel and SQL
 
