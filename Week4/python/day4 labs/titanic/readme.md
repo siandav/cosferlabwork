@@ -10,11 +10,17 @@ by [Thiago Costa](https://github.com/cosfer2804/cosferlabwork)
 - [3 Cheaters](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#3-cheaters)
 - [Gold Medal](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#gold-medal)
 - [Bronze Medal ](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#bronze-medal)
-
+9
 ## Data
-We picked data scraped from the Indeed website containing information of 7,000 data scientist jobs around the U.S. on August 3rd 2018. The information that we worked on is structured in: Company, Name, Position Name, Location, Job, Description, and Number of Reviews of the Company. 
-**[Download](https://www.kaggle.com/sl6149/data-scientist-job-market-in-the-us?select=alldata.csv)**
-
+<br/>
+[TITANIC LINK](https://www.kaggle.com/c/titanic/overview)
+<br/>
+First I studied the dataset given. Using jupyter notebook and tableau it was possible to apply some EDA get some knowledge about the dataframe.<br/>
+EDA insights:<br/>
+- The train data has 12 columns, 7 of them numerical and 5 of them catecorical. It has 891 entries.
+- The column 'cabin' need to be dropped, it has around 77% of null values. The column 'age' has around 20% of null values and the column 'embarked' has less than 1% of empty vlaues (only 2 values).
+- After applying some EDA, I could see that 'age' is definitely correlated to survival probability, in this case the null values should be replaced by the age.mean(). 'embarked' may also be correlated with survival, so in this case need to replace de null as well.
+- With the EDA was possible to see that creating some features may improve the results. Example: create a group for 'age' bands, leaving the 'age' alone gives you a lot of information that's hard to see and extract some information from it.<br/><br/>
 ## Data Processing
 First, we did some basic cleaning and deleted the location columns since they didn't contribute to our analysis. Then, we standardized the different position names in 4 categories: Data Analyst, Data Scientist, Data Engineer and other. After that, we cleaned the description column so that we only considered the more relevant words for each of the positions. We did that by tokenizing the words and removing stop words. Finally, we iterated through all the rows in search of keywords from 4 different domains: tools, skills, education level and majors. Keywords can be found in the plots below. We accounted for just one appearance of the word per job description, so no keyword was overrepresented.
 
