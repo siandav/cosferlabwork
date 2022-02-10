@@ -34,6 +34,7 @@ In the end the 3 cheaters submited the answers from the competition instead of t
 <img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/day4%20labs/titanic/submit.png">
 
 ## Bronze Medal
+[Bronze Medal](https://www.kaggle.com/tanmayunhale/titanic-top-4-hyperparameter-tuning/notebook)<br/>
 In this notebook, the author did data visualisation, data preprocessing, fill missing values and encoding:
 - He started dealing with empty values, filled the 'age' null values with the median;
 - Then he did 'features' applied with visualisation, also converted categorical data into numerical using dummies;
