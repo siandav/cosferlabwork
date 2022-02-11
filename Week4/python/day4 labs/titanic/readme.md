@@ -24,8 +24,8 @@ EDA insights:
 [Cheater1](https://www.kaggle.com/evgenypotapov/notebook602c8b4de2),
 [Cheater2](https://www.kaggle.com/maryragozina/notebook9849f51564),
 [Cheater3](https://www.kaggle.com/andrej0marinchenko/titanic-machine-learning-from-disaster/notebook)<br/>
-- The cheaters 1 and 2 are cheaters and lazy, because they just did a small and very confused for loop (the one below in the image) that play around the test table faking is doing something usefull. But in the end, they just extract the results from the internet and submit this csv as the predicted ones;
-- The cheater 3 actually do the same as the others in the end, but at least did some good EDA. In the beginning look like that is working with the data to get some insights, he worked with the nulls in some columns and even did some plots using matplotlib pyplot, scatter_3d, scatter, FacetGrid. Actually was really nice to see different plots applied in the EDA, it was possible to get insights from this notebook even the author cheating. In the end of the notebook the author used an decision tree, however in the end, where he was suppose to submit the predict values gotten from decision tree, he did the same as the other 2 cheaters above.<br/>
+- The cheaters 1 and 2 are cheaters and lazy, because they just did a small and very confused for loop (the one below in the image) that play around the test table faking is doing something usefull. But in the end, they just extract the results from the internet and submit as the predicted values;
+- The cheater 3 actually do the same as the others in the end, but at least did some good EDA. In the explored the data to get some insights, he worked with the nulls in some columns and even did some plots using matplotlib pyplot, scatter_3d, scatter, FacetGrid. Actually was really nice to see different plots applied in the EDA, it was possible to get some data insights from this notebook. In the end of the notebook the author used an decision tree, however in the end, where he was suppose to submit the predict values gotten from decision tree, he did the same as the others.<br/>
 
 "For" that the cheaters used to play around the test dataframe:
 <img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/day4%20labs/titanic/for.png">
@@ -69,13 +69,18 @@ The author aexplained in detail each work goal and teaching how to do as a data 
 - charting;<br/>
 
 **any feature engineering or feature wrangling methods which you have seen?**
+- the author combined the columns 'SibSp' and 'Parch' in one column to determinated if the passenger has a family or not;
 
-- 
 **did they impute any missing values?**
+- also in the column 'Embarked' he filled the missing values with 'S' as it is the most frequently occuring value;
+- In the 'Cabin' column he took the prefix values of the cabin number and replaced the missing values with 'X'. After the author mapped the 'Cabin' as a numeric value, for that he changed the letters to numbers;
 
 **what about scaling methods for numerical variables?**
+- the author used Sklearn StandardScaler to the numerical variables.
 
 **what about encoding categorical variables?**
+- the author kept only the ticket values in common from 'ticket' column. Then he applyed an encoder to see what ticket each person had.
 
 **any evidence of overfit or sampling bias?**
-
+- There is no evidence of overfit and sampling bias. The author took some insights from the EDA and dropped some columns. He didn't force the results, but at the same time he tryed a lot of different methods and choose the one that gave the best accuracy (fair enought for me). 
+- He also used Hyperparameter optimization to improve the accuracy. 
