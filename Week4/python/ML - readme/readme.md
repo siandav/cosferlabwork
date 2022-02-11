@@ -13,7 +13,7 @@ by [Thiago Costa](https://github.com/cosfer2804/cosferlabwork)
 - [Evaluate the Model](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#evaluate-the-model)
 - [Apply OverSampling](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#apply-oversampling)
 - [Apply Tomek Links](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#apply-tomek-links)
-- [Final Insights](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#final-insights)
+- [Screenshots](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#final-insights)
 
 ## Import and Explore the Data
 - First step I imported the database with pandas and then drop duplicates and 'customerID' and then reseted the index;
@@ -39,7 +39,18 @@ by [Thiago Costa](https://github.com/cosfer2804/cosferlabwork)
 ## Apply Tomek Links
 - I checked also an under-sampling to see if it improved or not the accuracy. Under-sampling consist in remove some values from majority class, in this case 'No'.
 
-## Final Insights
-This part doesn't have in the notebook but I will bring it to the readme to include some insights that I got from trying different samplings
--
+## Sreenshots
+- In the picture below it's possible to see how each sampling tryed to balance the values:
+<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/ML%20-%20readme/values_count.png">
+
+- Correlation Matrix without any sampling:
+<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/ML%20-%20readme/nosampling%20matrix.png">
+
+- Correlation Matrix with SMOTE:
+<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/ML%20-%20readme/smote%20matrix.png">
+
+- Correlation Matrix with Tomek Links:
+<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/ML%20-%20readme/tomek%20matrix.png">
+
+
 
