@@ -49,5 +49,33 @@ Here is the accuracy table comparing differend models:
 <img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Week4/python/day4%20labs/titanic/models%20table.png">
 
 ## Gold Medal
+[Gold Medal](https://www.kaggle.com/tanmayunhale/titanic-top-4-hyperparameter-tuning/notebook)<br/>
+This notebook did a very good analysis with a lot explanations. The author divided the worflow stages in:
+- question or problem definition;
+- acquire training and testing data;
+- wrangle, prepare, cleanse the data;
+- analyze, identify patterns and explore the data;
+- model, predict and solve the problem;
+- visualize, report and present the problem solving steps and final solution;
+- supply or submit the results; <br/>
 
+The author aexplained in detail each work goal and teaching how to do as a data analyst. The worflow goals is divided in:
+- classifying;
+- correlating;
+- converting;
+- completing;
+- correcting;
+- creating;
+- charting;<br/>
+
+**any feature engineering or feature wrangling methods which you have seen?**
+
+- 
+**did they impute any missing values?**
+
+**what about scaling methods for numerical variables?**
+
+**what about encoding categorical variables?**
+
+**any evidence of overfit or sampling bias?**
 
