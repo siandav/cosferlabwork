@@ -1,43 +1,45 @@
-# Ironhack Project - Job Position Analysis
+# LAB | IMBALANCED DATA - CHURN
 **Summary:**
-We analysed roughly 7,000 jobs offers related to data scraped from the web. The aim of this study is to offer insight to Data Analytics students in regards
-with landing a job in the data industry. For this, we accounted for the most
-demanded tools, skills and backgrounds that we might (hopefully) master in
-the bootcamp
+Our goal is to predict if the customer churn or not using a logistic regression on the variables: tenure, SeniorCitizen, MonthlyCharges.
 <br/><br/>
-by [Thiago Costa](https://github.com/cosfer2804/cosferlabwork) & [Marc Soler](https://github.com/cosfer2804/cosferlabwork) & [Marc Puyol Iniesta](https://github.com/cosfer2804/cosferlabwork), January 2022
+by [Thiago Costa](https://github.com/cosfer2804/cosferlabwork)
 <br/><br/>
-<img src="https://prod-discovery.edx-cdn.org/media/programs/card_images/5038aae3-cc09-4995-a33a-8ca6bd03952e-9caf53c6bed2.jpg">
 
 ## Table of content
 
-- [Data](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#data)
+- [Import and Explore the Data](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#import-and-explore-the-data)
 - [Data Processing](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#Data-Processing)
-- [Analysis](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#analysis)
-- [Conclusion](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#Conclusion)
+- [Regression Model](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#regression-model)
+- [Evaluate the Model](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#evaluate-the-model)
+- [Apply OverSampling](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#apply-oversampling)
+- [Apply Tomek Links](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#apply-tomek-links)
+- [Final Insights](https://github.com/cosfer2804/cosferlabwork/edit/main/Jupyter/Week2/Project/readme.md#final-insights)
 
-## Data
-We picked data scraped from the Indeed website containing information of 7,000 data scientist jobs around the U.S. on August 3rd 2018. The information that we worked on is structured in: Company, Name, Position Name, Location, Job, Description, and Number of Reviews of the Company. 
-**[Download](https://www.kaggle.com/sl6149/data-scientist-job-market-in-the-us?select=alldata.csv)**
+## Import and Explore the Data
+- First step I imported the database with pandas and then drop duplicates and 'customerID' and then reseted the index;
+- Then used info() to learn more about the dataset, see if has any null values and de data types;
 
 ## Data Processing
-First, we did some basic cleaning and deleted the location columns since they didn't contribute to our analysis. Then, we standardized the different position names in 4 categories: Data Analyst, Data Scientist, Data Engineer and other. After that, we cleaned the description column so that we only considered the more relevant words for each of the positions. We did that by tokenizing the words and removing stop words. Finally, we iterated through all the rows in search of keywords from 4 different domains: tools, skills, education level and majors. Keywords can be found in the plots below. We accounted for just one appearance of the word per job description, so no keyword was overrepresented.
+- In this step I selected the columns that I used to apply the regression model and predict churn. The columns were 'SeniorCitizen', 'tenure', 'MonthlyCharges' and 'Churn'.
 
-## Analysis
-**Tools:** Excel is still very popular, specially for the data analyst position, possibly because it is not as technical as the others. As for Tableau, it is most demanded for Data Analysts (the percentage would probably be higher if we take into consideration some similar expressions such as visualization tools, Power BI, etc.). Also, from the graph we can infer that our position assignation was quite effective, since the percentages for the 'other' category are significantly lower except for Excel, the least specialized tool.
+**Extract the Target Variable**: here I split the target ('churn') to be predicted and the rest (X) of the columns to be trained and tested.
+**Extract the Indepedent Variables and Scale them**: in this step I split the X in numerical and categorical variables
+- For the numerical I used Robust scaler to standardize the values;
+- Actually after split the num and cat I found that was not necessary, because in X only has numerical data types;
 
-**Skills:** Machine learning is very demanded for data scientist and data engineers, but not so much for analyst, the same as for AI.
+## Regression Model
+- First I used train_test_split (split randomly the variables in x_train, x_test, y_train, y_test using the test_size as 0,45 and random_state 40);
+- Then I defined the model that I applyed, in this case was LogisticRegression;
 
-<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Jupyter/Week2/Project/chart1.png">
+## Evaluate the Model
+- Here I evaluated the model with accuracy_score (0,79) and used a confusion_matrix that allows visualization of the performance of the model applyed. In the matrix you can see the true positive, true negative, false positive and false negative.
 
-**Education level:** Most Data Analyst jobs require either a Bachelor's or Master's. For Data Scientist, on the other hand, we find higher education requirements: less percentage of job positions ask for Bachelor's, but a significant amount of them ask for a PhD, so we presume recruiters don't even list a Bachelor's in the job offer.
+## Apply OverSampling
+- To improve the accuracy of the model I decided to use SMOTE(synthetic minority oversampling technique). It's an over sampling technique that adds new points between existing points based on the nearest neighbors. In this case created synthetic values to the minority class predicted (in this case 'Yes') to balance the dataset to do the supervised learning. 
+## Apply Tomek Links
+- I checked also an under-sampling to see if it improved or not the accuracy. Under-sampling consist in remove some values from majority class, in this case 'No'.
 
-**Majors:** According to our results, business is the most common or demanded background. This can be biased by the popularity of the word itself. Very specialized majors (in the sense that they differ significantly from the data path), such as geography or psychology, have marginal niche demand.
-
-<img src="https://github.com/cosfer2804/cosferlabwork/blob/main/Jupyter/Week2/Project/chart2.png">
-
-## Conclusion
-- Job positions overlap frequently, and roles in the data industry are not well-defined. Therefore, don't let job positions names differing from data analyst stop you from applying.
-- You're okay with a bachelor's degree to access most of the jobs in terms of education level requirements.
-- The most demanded tools in the industry for the data analyst role are excel and SQL
+## Final Insights
+This part doesn't have in the notebook but I will bring it to the readme to include some insights that I got from trying different samplings
+-
 
